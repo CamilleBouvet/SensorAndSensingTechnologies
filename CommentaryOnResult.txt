@@ -1,0 +1,16 @@
+When using the linearisation of the curve using the whole excel table (y=0.1632*x-50.514)
+the result when testing the sensor give 38°C for a value of ADC = 544.
+
+The error here is 
+E1 = 38 - 28,27463787
+E1 = 9.72536213
+
+When using the linearisation including only the value of ADC from 10 to 900(y=0.1236*x-34.064)
+the result when testing the sensor give 32°C for ADC = 538
+
+The error here is
+E2 = 32 - 27,65398688
+E2 = 4.34601312
+
+So to use this sensor in a more effective way it's better not to take in account the values
+at the very begining and the very and of its measure range.
